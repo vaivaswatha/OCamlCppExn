@@ -28,7 +28,7 @@ void throw_and_catch_exn(void)
   {
     throw std::runtime_error("This is not caught on macOS, why?");
   }
-  catch(const std::exception& e)
+  catch(...)
   {
     std::cout << "Exception successfully caught\n";
   }
