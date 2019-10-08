@@ -1,0 +1,4 @@
+(executable
+  (name oce_runner)
+  (libraries ctypes ctypes.foreign exn_thrower)
+)
