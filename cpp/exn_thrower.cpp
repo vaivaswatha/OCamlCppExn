@@ -30,7 +30,7 @@ void throw_and_catch_exn(void)
   }
   catch(const std::exception& e)
   {
-    std::cerr << e.what() << '\n';
+    std::cout << "Exception successfully caught\n";
   }
 }
 
