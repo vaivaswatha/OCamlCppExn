@@ -7,7 +7,7 @@ else
 	LFLAGS += -cclib exn_thrower.o -cclib -lstdc++
 	UNAME_S := $(shell uname -s)
 	ifeq ($(UNAME_S),Darwin)
-		OSFLAGS += -cclib -Xlinker -cclib -keep_dwarf_unwind
+		LFLAGS += -cclib -Xlinker -cclib -keep_dwarf_unwind
 	endif
 endif
 
