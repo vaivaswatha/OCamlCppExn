@@ -3,6 +3,7 @@
   (cxx_names exn_thrower)
   (cxx_flags -std=c++11 -fPIC)
   ;;; -lstdc++ is not portable, it can be e.g. -lc++
-  (c_library_flags -lstdc++ )
+  (c_library_flags -lstdc++)
+  (library_flags (-cclib -Wl,-keep_dwarf_unwind))
 )
 
